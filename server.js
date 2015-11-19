@@ -1,4 +1,4 @@
-re("http");
+var http = require("http");
 var os = require("os");
 http.createServer(function(request, response) {
 		    console.log("New request arrived.");
@@ -7,4 +7,3 @@ http.createServer(function(request, response) {
 			        response.end();
 				}).listen(80);
 console.log("Server is running, listening on port 80....");
-
